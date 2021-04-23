@@ -1,0 +1,707 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* ----------------- INICIO ------------------- */
+
+body {
+    background-color: black;
+    color: white;
+    width: 100%;    
+}
+
+#grilla--1 {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "presentacion presentacion"
+    "musica locacion"
+    "footer footer";
+    grid-template-rows: 5% 50% 35% 10%;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    grid-area: header;
+    position: static;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-radius: 3rem;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+header a img {
+    padding-left: 0.6rem;
+} 
+
+header a img:hover {
+   transform: rotateZ(90deg);
+}    
+
+.header__menu {
+   font-family: 'Raleway', sans-serif;
+   font-style: italic;
+   font-weight: bold;
+   font-size: 1.5em;
+   color: black;
+   display: flex;
+   flex: 1;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.header__menu a {
+   text-decoration: none;
+}
+
+.header__menu a:hover{
+   color: blue;
+   transform: translate(0.3rem, 0.3rem); 
+}
+
+.header__menu--activa {
+   color:blue
+}
+
+.presentacion {
+    grid-area: presentacion;
+    display: block;
+    background-image: url(../multimedia/fondoblanco.png);
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+h1 {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.presentacion video {
+    width: 50rem;
+    border: 0;
+}
+
+.presentacion h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.presentacion h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    background-color: grey;
+    padding-top: 0.9rem;
+    height: 3rem;
+} 
+
+.extras {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,128,1) 100%);
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.extras__locacion {
+    grid-area: locacion;
+    display: inline-block;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 50%;    
+ }
+
+.extras__locacion iframe {
+    border: 0;
+    border-radius: 1.3rem;
+    width: 25rem;
+    height: 25rem;
+}
+
+.extras__locacion p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.extras__locacion a input {
+    width: 12.5rem;
+    height: 3rem;
+    background-color: white;
+    color: blue;
+    border-style: outset;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    transition: all 2s;
+}
+
+.extras__locacion a input:hover {
+    width: 13rem;
+    height: 3.5rem;
+    border-style: inset;
+    background-color: black;
+}
+
+.extras__musica {
+    grid-area: musica;
+    display: inline-block;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;     
+}
+
+.extras__musica iframe {
+    border: 0;
+    border-radius: 1.3rem;
+    width: 25rem;
+    height: 34.3rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: grey;
+    padding-top: 1.3rem;
+    justify-items: center;
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+}
+
+footer h3{
+    padding-top: 0.4rem;
+    padding-bottom: 0.6rem;
+}
+
+footer p{
+   background-color: black;
+   padding-top: 0.3rem;
+   width: 100%;
+   height: 1.8rem;
+}
+
+.footer__nav  {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-items: center;
+ }
+
+.footer__nav a {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+/* ----------------- RECORRIDOS ------------------- */
+
+#grilla--2 {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "videocrew videocrew"
+    "tours--contacto tours--mapa"
+    "footer footer";
+    grid-template-rows: 5% 55% 30% 10%;
+    grid-template-columns: 10% 90%;
+    height: 100%;
+    width: 100%;
+}
+
+.videocrew {
+    grid-area: videocrew;
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-image: url(../multimedia/fondoblanco.png);
+}
+
+.videocrew video {
+    width: 25rem;
+    border: 0;
+}
+
+.videocrew h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.videocrew p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.tours {    
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,128,1) 100%);
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.tours__contacto {
+    grid-area: tours--contacto;
+    display: inline-block;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0.9rem;
+}
+
+.tours__contacto h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 0.6rem;
+} 
+
+.tours__contacto a input {
+    width: 12.5rem;
+    height: 3rem;
+    background-color: white;
+    color: blue;
+    border-style: outset;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    transition: all 2s;
+}
+
+.tours__contacto a input:hover {
+    width: 13rem;
+    height: 3.7rem;
+    border-style: inset;
+    background-color: black;
+}
+
+.tours__mapa {
+    grid-area: tours--mapa;
+    display: inline-flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.tours__mapa li {
+    list-style: none;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+.tours__mapa iframe {
+    border: 0;
+    border-radius: 1.3rem;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+/* ----------------- GALERIA ------------------- */
+
+#grilla--3 {
+    display: grid;
+    grid-template-rows: 7% 10% auto 11%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "header header"
+    "albumes albumes"
+    "captura fotos"
+    "footer footer";
+    height: 100%;
+    width: 100%;    
+}
+
+.albumes {
+    grid-area: albumes;
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.visuales {    
+    display: inline-flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.visuales__captura {
+    grid-area: captura;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0.9rem;
+    width: 50%;
+}
+
+.visuales__captura video {
+    width: 20rem;    
+}
+
+.visuales__captura h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.visuales__fotos {
+    grid-area: fotos;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.visuales__fotos li {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+.visuales__fotos li img{
+    border: white solid 0.06rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: black;
+}
+
+.visuales__fotos li img:hover {
+    transform: translate(10px, 20px);
+}
+
+/* ----------------- TIENDA ------------------- */
+
+#grilla--4 {
+    display: grid;
+    grid-template-rows: 7% 10% auto 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "header header"
+    "ventas ventas"
+    "listado seleccion"
+    "footer footer";
+    height: 100%;
+    width: 100%;    
+}
+
+.ventas {
+    grid-area: ventas;
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.productos {    
+    display: inline-flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,0,1) 100%);
+    width: 97%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.listado {
+    grid-area: listado;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.listado li {
+    list-style: none;
+    display: flex;
+    flex: 1;
+}
+
+.listado li img{
+    border-radius: 1rem;
+}
+
+.listado li img:hover {
+    transform: translate(10px, 20px);
+}
+
+.seleccion {
+    grid-area: seleccion;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.seleccion form legend h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.seleccion img {
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.seleccion fieldset {
+    background-color: black;
+    border-radius: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.seleccion p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.seleccion form div {
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+}
+
+.seleccion form div select {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    transition: all 2s; 
+}
+
+.seleccion form div select:focus {
+    width: 11rem;
+    height: 3rem;
+
+}
+
+.boton {
+    width: 12.5rem;
+    height: 3rem;
+    background-color: white;
+    color: blue;
+    border-style: outset;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    transition: all 2s;
+}
+
+.boton:hover {
+    width: 13rem;
+    height: 3.7rem;
+    border-style: inset;
+    background-color: black;
+}
+
+/* ----------------- CONTACTO ------------------- */
+
+#grilla--5 {
+    display: grid;
+    grid-template-rows: 7% auto 11%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header"
+    "registro"
+    "footer";
+    height: 100%;
+    width: 100%;    
+}
+
+.registro {
+    grid-area: registro;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../multimedia/fondoblanco.png);
+}
+
+.registro fieldset {
+    width: 97%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: black;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.registro form legend h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.registro p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.registro form div {
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+}
+
+.registro form div select {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    transition: all 2s; 
+}
+
+.registro form div select:focus {
+    width: 11rem;
+    height: 3rem;
+}
+
+.completar {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    transition: all 2s; 
+}
+
+.completar:focus {
+    width: 11rem;
+    height: 3rem;
+}
+
+/* ------------ MEDIAS QUERIES ---------- */
+
+/*  @media (max-width: 567px) {
+
+    #grilla--2 {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "videocrew videocrew"
+    "tours--contacto tours--mapa"
+    "footer footer";
+    grid-template-rows: 5% 55% 30% 10%;
+    grid-template-columns: 10% 90%;
+    height: 100%;
+    width: 100%;
+}
+
+}
+
+@media (max-width: 768px) {
+    #grilla--1 {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "presentacion"
+        "musica"
+        "mapa"
+        "footer";
+        grid-template-rows: 5% auto auto 10%;
+        grid-template-columns: 100%;
+    }    
+} 
+
+@media (max-width: 576px) {
+    h1 {
+      font-size: 2.2rem; } }
+
+@media (min-width: 576px) {
+    h1 {
+      font-size: 2.2rem; } }
+
+@media (min-width: 768px) {
+    h1 {
+      font-size: 2.2rem; } } 
+      
+      
+
+@media (max-width: 992px) {
+    h1 {
+      font-size: 2.2rem; } }
+
+@media (min-width: 992px) {
+    h1 {
+      font-size: 2.2rem; } }
+
+
+
+@media (max-width: 1200px) {
+    h1 {
+      font-size: 2.2rem; } } 
+      
+@media (min-width: 1200px) {
+    h1 {
+      font-size: 2.2rem; } }       
+  
+*/
