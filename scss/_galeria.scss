@@ -1,0 +1,44 @@
+.albumes {
+    grid-area: albumes;
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.visuales {    
+    display: inline-flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.visuales__fotos {
+    grid-area: fotos;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    
+li {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+li img{
+    border: white solid 0.06rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: black;
+}
+
+li img:hover {
+    transform: translate(10px, 20px);
+}
+
+}
