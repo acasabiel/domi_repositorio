@@ -10,39 +10,97 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/estilo.css"/>
     <title>#rodandobsas</title>
 </head>
 
-<body>
+<body class="container-fluid">
 
    <div id="grilla--4">
 
-    <header>
-        <a href="../index.html"> <img src="../multimedia/logonegro.png"> </a>
-        <nav class="header__menu">
-            <a href="../index.html"  target="_blank"> Inicio </a>
-            <a href="galeria.html" target="_blank"> Galería </a>
-            <a href="recorridos.html" target="_blank"> Recorridos </a>
-            <a href="#" class="header__menu--activa"> Tienda </a>
-            <a href="contacto.html" target="_blank"> Contacto </a>
+    <header class="d-inline-flex justify-content-start justify-content-md-center align-items-center w-100">
+        <a href="../index.html"> <img class="d-none d-md-block" src="../multimedia/logonegro.png" alt="Logo" title="Logo"> </a>
+        <nav class="header__menu row d-none d-md-flex text-center justify-content-around">
+            <a href="../index.html"  target="_blank" class="col-12 col-md-2 text-dark"> Inicio </a>
+            <a href="galeria.html" target="_blank" class="col-12 col-md-2 text-dark"> Galería </a>
+            <a href="recorridos.html" target="_blank" class="col-12 col-md-2 text-dark"> Recorridos </a>
+            <a href="#" class="header__menu--activa  col-12 col-md-2"> Tienda </a>
+            <a href="contacto.html" target="_blank" class="col-12 col-md-2 text-dark"> Contacto </a>
         </nav>
+        <div class="dropdown d-flex d-md-none">
+            <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="img-circle pt-1 pb-1" src="../multimedia/logonegro.png" alt="Logo y menú" title="menu">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="../index.html"> Inicio</a>
+              <a class="dropdown-item" href="galeria.html">  Galería</a>
+              <a class="dropdown-item" href="recorridos.html"> Recorridos</a>
+              <a class="dropdown-item header__menu--activa" href="#"> Tienda</a>
+              <a class="dropdown-item" href="contacto.html"> Contacto</a>
+            </div>
+        </div>
     </header>
 
     <main class="ventas">
-        <h1 class="wow animate__animated animate__lightSpeedInLeft">Rodando Buenos Aires</h1>
-        <div class="productos">
-          <ul class="listado">
+        <div class="row d-block justify-content-center align-items-center w-100">
+
+        <h1 class="wow animate__animated animate__lightSpeedInLeft col-12 text-center">Rodando Buenos Aires</h1>
+        <div class="productos row d-inline-flex align-items-center justify-content-around w-100">
+
+          <ul class="listado row d-none d-lg-inline-flex justify-content-around">
              <li><img src="../multimedia/articulo2.png"></li>
              <li><img src="../multimedia/articulo6.png"></li>
              <li><img src="../multimedia/articulo1.png"></li>
-             <li><img src="../multimedia/articulo5.png"></li>
-             <li><img src="../multimedia/articulo7.png"></li>
              <li><img src="../multimedia/articulo3.png"></li>
+             <li><img src="../multimedia/articulo5.png"></li>
+             <li><img src="../multimedia/articulo9.png"></li>
              <li><img src="../multimedia/articulo8.png"></li>
              <li><img src="../multimedia/articulo4.png"></li>
+             <li><img src="../multimedia/articulo7.png"></li>
           </ul>
-          <section class="seleccion">
+
+          <div id="carouselExampleControls" class="carousel slide d-lg-none col-8" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../multimedia/articulo2.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../multimedia/articulo6.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../multimedia/articulo1.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../multimedia/articulo5.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../multimedia/articulo7.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../multimedia/articulo3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../multimedia/articulo8.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../multimedia/articulo4.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../multimedia/articulo9.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+
+          <section class="seleccion d-flex justify-content-center col-6 col-lg-5 w-100">
 
              <form action="" method="post" enctype="text/plain">
 
@@ -80,23 +138,26 @@
 
     </main>
 
-    <footer>
+    <footer class="d-inline-block justify-content-around">
 
-        <h3> Buscame en redes sociales @dominiquelabici </h3>
-        <nav  class="footer__nav">
-            <a href="https://es-la.facebook.com/dominiquelabici" target="_blank"> <img src="../multimedia/facebook.png"> </a> 
-            <a href="https://www.instagram.com/dominiquelabici/?hl=es-la" target="_blank"> <img src="../multimedia/instagram.png"> </a>
-            <a href="https://ar.pinterest.com/DominiqueLabici/_created/" target="_blank"> <img src="../multimedia/pinterest.png"> </a>
-            <a href="https://open.spotify.com/playlist/50R2sDpdZVKmGYcjqoSNqs?si=e9a09c3cd50f4e64" target="_blank"> <img src="../multimedia/spotify.png"> </a>
+        <h3 class="text-center"> Buscame en redes sociales @dominiquelabici </h3>
+        <nav  class="footer__nav row d-inline-flex align-items-center justify-content-around w-100">
+            <a class="col-3" href="https://es-la.facebook.com/dominiquelabici" target="_blank"> <img src="../multimedia/facebook.png"> </a> 
+            <a class="col-3" href="https://www.instagram.com/dominiquelabici/?hl=es-la" target="_blank"> <img src="../multimedia/instagram.png"> </a>
+            <a class="col-3" href="https://ar.pinterest.com/DominiqueLabici/_created/" target="_blank"> <img src="../multimedia/pinterest.png"> </a>
+            <a class="col-3" href="https://open.spotify.com/playlist/50R2sDpdZVKmGYcjqoSNqs?si=e9a09c3cd50f4e64" target="_blank"> <img src="../multimedia/spotify.png"> </a>
         </nav>    
-        <p>Copyright &copy; 2021 By: Lorena Casabiel, todos los derechos reservados.</p>
-    
+        <p class="text-center">Copyright &copy; 2021 By: Lorena Casabiel, todos los derechos reservados.</p>
+
     </footer>
 
    </div>
 
 <script src="js/wow.min.js"></script>
 <script> new WOW().init();</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     
 </body>
 
