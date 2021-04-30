@@ -1,0 +1,686 @@
+@import "footer";
+@import "header";
+
+$padding-size: 2rem;
+$button-width: 12.5rem;
+$button-height: 3rem;
+
+@mixin alineacion1 {
+    justify-content: center;
+    align-items: center;
+}
+@mixin alineacion2 {
+    text-align: center;
+    align-items: center;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* ----------------- INICIO ------------------- */
+
+body {
+    background-color: black;
+    color: white;
+    width: 100%;    
+}
+
+#grilla--1 {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "presentacion presentacion"
+    "extras__musica extras__locacion"
+    "footer footer";
+    grid-template-rows: 5% 50% 35% 10%;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.presentacion {
+    grid-area: presentacion;
+    display: block;
+    background-image: url(../multimedia/fondoblanco.png);
+    @include alineacion2;
+    width: 100%;
+    height: 85%;
+    video {
+        width: 50rem;
+        border: 0;
+    }    
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: $padding-size;
+    }    
+    h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+        color: black;
+        background-color: grey;
+        padding-top: 0.9rem;
+        height: 3rem;
+    }
+}
+
+h1 {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5em;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.extras {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,128,1) 100%);
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.extras__locacion {
+    grid-area: extras__locacion;
+    display: inline-block;
+    flex: 1;
+    @include alineacion1;
+    text-align: center; 
+    width: 50%;    
+    iframe {
+        border: 0;
+        border-radius: 1.3rem;
+        width: 25rem;
+        height: 25rem;
+    }    
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+        padding-top: $padding-size;
+        padding-bottom: $padding-size;
+    }    
+    a input {
+        width: $button-width;
+        height: $button-height;
+        background-color: white;
+        color: blue;
+        border-style: outset;
+        font-weight: bold;
+        border-radius: 0.6rem;
+        transition: all 2s;
+    }    
+    a input:hover {
+        width: 13rem;
+        height: 3.5rem;
+        border-style: inset;
+        background-color: black;
+    }
+ }
+
+.extras__musica {
+    grid-area: extras__musica;
+    display: inline-block;
+    flex: 1;
+    @include alineacion1;
+    text-align: center;
+    width: 50%;    
+    iframe {
+        border: 0;
+        border-radius: 1.3rem;
+        width: 25rem;
+        height: 34.3rem;
+    }
+}
+
+/* ----------------- RECORRIDOS ------------------- */
+
+#grilla--2 {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "videocrew videocrew"
+    "tours__contacto tours__mapa"
+    "footer footer";
+    grid-template-rows: 5% 55% 30% 10%;
+    grid-template-columns: 20% 80%;
+    height: 100%;
+    width: 100%;
+}
+
+.videocrew {
+    grid-area: videocrew;
+    display: block;
+    @include alineacion2;
+    background-image: url(../multimedia/fondoblanco.png);
+    width: 100%;
+    video {
+        width: 25rem;
+        border: 0;
+    }    
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+    }    
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+}
+
+.tours {    
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,128,1) 100%);
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.tours__contacto {
+    grid-area: tours__contacto;
+    display: inline-block;
+    flex: 1;
+    @include alineacion1;
+    text-align: center;
+    padding-bottom: 0.9rem;    
+    h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 0.6rem;
+    } 
+    a input {
+    width: $button-width;
+    height: $button-height;
+    background-color: white;
+    color: blue;
+    border-style: outset;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    transition: all 2s;
+    }
+    a input:hover {
+    width: 13rem;
+    height: 3.7rem;
+    border-style: inset;
+    background-color: black;
+    }
+}
+
+.tours__mapa {
+    grid-area: tours__mapa;
+    display: inline-flex;
+    flex: 1;
+    @include alineacion1;
+    text-align: center; 
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;    
+    li {
+    list-style: none;
+    justify-content: space-around;
+    }
+    iframe {
+    border: 0;
+    border-radius: 1.3rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    }
+}
+
+/* ----------------- GALERIA ------------------- */
+
+#grilla--3 {
+    display: grid;
+    grid-template-rows: 7% 10% auto 11%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "header header"
+    "albumes albumes"
+    "captura fotos"
+    "footer footer";
+    height: 100%;
+    width: 100%;    
+}
+
+.albumes {
+    grid-area: albumes;
+    display: block;
+    @include alineacion2;
+    width: 100%;
+}
+
+.visuales {    
+    display: inline-flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.visuales__captura {
+    grid-area: captura;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0.9rem;
+    width: 50%;    
+    video {
+    width: 20rem;    
+    }
+    h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    }
+}
+
+.visuales__fotos {
+    grid-area: fotos;
+    display: flex;
+    flex-flow: row wrap;
+    @include alineacion1;
+    text-align: center;
+    width: 50%;
+    li {
+    list-style: none;
+    display: flex;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    }
+    li img{
+    border: white solid 0.06rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: black;
+    }    
+    li img:hover {
+    transform: translate(10px, 20px);
+    }
+}
+
+/* ----------------- TIENDA ------------------- */
+
+#grilla--4 {
+    display: grid;
+    grid-template-rows: 7% 10% auto 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "header header"
+    "ventas ventas"
+    "listado seleccion"
+    "footer footer";
+    height: 100%;
+    width: 100%;    
+}
+
+.ventas {
+    grid-area: ventas;
+    display: block;
+    @include alineacion2;
+    width: 100%;
+}
+
+.productos {    
+    display: inline-flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,0,1) 100%);
+    width: 100%;
+}
+
+.listado {
+    grid-area: listado;
+    display: flex;
+    flex-flow: row wrap;
+    @include alineacion1;
+    text-align: center;
+    width: 50%;
+    li {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    }
+    li img{
+    border-radius: 1rem;
+    }
+    li img:hover {
+    transform: translate(10px, 20px);
+    }
+}
+
+.seleccion {
+    grid-area: seleccion;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    form legend h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    }    
+    img {
+    border-radius: 1rem;
+    padding: 1rem;
+    }    
+    fieldset {
+    background-color: black;
+    border-radius: 1rem;
+    justify-content: center;
+    padding: $padding-size;
+    }    
+    p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    }    
+    form div {
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    }    
+    form div select {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    transition: all 2s; 
+    }    
+    form div select:focus {
+    width: 11rem;
+    height: 3rem;
+    
+    }
+}
+
+.boton {
+    width: $button-width;
+    height: $button-height;
+    background-color: white;
+    color: blue;
+    border-style: outset;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    transition: all 2s;
+}
+
+.boton:hover {
+    width: 13rem;
+    height: 3.7rem;
+    border-style: inset;
+    background-color: black;
+}
+
+/* ----------------- CONTACTO ------------------- */
+
+#grilla--5 {
+    display: grid;
+    grid-template-rows: 7% auto 11%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header"
+    "registro"
+    "footer";
+    height: 100%;
+    width: 100%;    
+}
+
+.registro {
+    grid-area: registro;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../multimedia/fondoblanco.png);
+    fieldset {
+    width: 97%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: black;
+    justify-content: center;
+    padding: $padding-size;
+    border-radius: 1rem;
+    }    
+    form legend h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    }    
+    p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    }    
+    form div {
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    }    
+    form div select {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    transition: all 2s; 
+    }    
+    form div select:focus {
+    width: 11rem;
+    height: 3rem;
+    }
+}
+
+.completar {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    transition: all 2s; 
+}
+
+.completar:focus {
+    width: 11rem;
+    height: 3rem;
+}
+
+/* ----------------- MEDIA QUERIES ------------------- */
+@media (max-width: 768px) {
+    h1 {
+    font-size: 3.5em;
+    }
+    header {
+    background-color: unset;
+    }
+    footer {
+    height: fit-content;
+    padding-top: 0.6rem;
+    }
+    footer h3 {
+    font-size: 1rem;
+    }
+    footer p{
+    height: fit-content;
+    font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+    background-color: white;
+    }
+}
+
+@media (max-width: 1024px) { 
+    .tours__mapa li h2 {
+    font-size: 1em;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+    .tours__mapa iframe {
+    width: 10rem;
+    height: 10rem;
+    }
+    .tours__mapa {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #grilla--1{
+    background-image: url(../multimedia/fondoblanco.png);
+    padding: 0;
+    margin: 0;
+    }
+    .presentacion {
+    height: fit-content;
+    width: fit-content;
+    background-image: none;
+    margin-left: 1rem;
+    }
+    .presentacion video {
+    width: 20rem;
+    }
+    .presentacion h2 {
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+    .presentacion h4 {
+    font-weight: 200;
+    color: white;
+    background-color: unset;
+    height: fit-content;
+    }
+    .extras__locacion iframe {
+    width: 15rem;
+    height: 15rem;
+    }
+    .extras__musica iframe {
+    width: 15rem;
+    height: 20.3rem;
+    }
+
+    #grilla--2{
+    background-image: url(../multimedia/fondoblanco.png);
+    padding: 0;
+    margin: 0;
+    }
+    .videocrew {
+    height: fit-content;
+    width: fit-content;
+    background-image: none;
+    margin-left: 1rem;
+    }
+    .videocrew video {
+    width: 18rem;
+    }
+    .videocrew h2 {
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+    .tours__mapa li h2 {
+    font-size: 1em;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+    .tours__mapa iframe {
+    width: 10rem;
+    height: 10rem;
+    }
+    .tours__mapa {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+
+    #grilla--3 {
+    background-image: url(../multimedia/fondoblanco.png);
+    padding: 0;
+    margin: 0;
+    }
+    .albumes {
+    height: fit-content;
+    width: fit-content;
+    background-image: none;
+    }
+    .visuales__captura video {
+    width: 15rem;    
+    }
+    .visuales__captura h2 {
+    font-size: 1em;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center; 
+    }
+    .visuales__fotos li img{
+    border: white solid 0.03rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: black;
+    }
+    .visuales__fotos li img:hover {
+    transform: none;
+    }
+
+    #grilla--4 {
+    background-image: url(../multimedia/fondoblanco.png);
+    padding: 0;
+    margin: 0;
+    }   
+    .ventas {
+    height: fit-content;
+    width: fit-content;
+    background-image: none;
+    }
+    .seleccion fieldset legend {
+    font-size: 1em;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+    .seleccion p {
+    font-weight: 500;
+    }
+    .seleccion img {
+    width: 15rem;
+    font-weight: 500;
+    }
+}

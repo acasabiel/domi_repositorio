@@ -1,0 +1,75 @@
+header {
+    grid-area: header;
+    position: static;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-radius: 3rem;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    a img {
+        padding-left: 0.6rem;
+    }     
+    a img:hover {
+       transform: rotateZ(90deg);
+    } 
+}
+
+.header__menu {
+   font-family: 'Raleway', sans-serif;
+   font-style: italic;
+   font-weight: bold;
+   font-size: 1.5em;
+   color: black;
+   display: flex;
+   flex: 1;
+   justify-content: space-around;
+   align-items: center;
+   a {
+    text-decoration: none;
+   } 
+   a:hover{
+    color: blue;
+    transform: translate(0.3rem, 0.3rem); 
+   }
+}
+
+.header__menu--activa {
+   color:blue
+}
+
+.dropdown {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+a.dropdown-item.header__menu--activa {
+       font-family: 'Raleway', sans-serif;
+       font-weight: bold; 
+       color: blue;
+}
+
+.dropdown-item {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+}
+  
+#dropdownMenuButton {
+    border: none;
+    border-radius: 3rem;
+}
+  
+.dropdown-menu.show {
+    background-color: white;
+    border-color: black;
+    color: black;
+    border-radius: 2rem;
+}

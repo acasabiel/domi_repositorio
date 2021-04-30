@@ -1,0 +1,29 @@
+{
+  "name": "dominique",
+  "version": "1.0.0",
+  "description": "sitio web dominique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss estiloscss/estilo.scss estilos/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acasabiel/domi_repositorio.git"
+  },
+  "author": "lorena casabiel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acasabiel/domi_repositorio/issues"
+  },
+  "homepage": "https://github.com/acasabiel/domi_repositorio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}

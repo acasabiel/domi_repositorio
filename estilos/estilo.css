@@ -588,6 +588,7 @@ h1 {
   .extras__musica iframe {
     width: 15rem;
     height: 20.3rem; }
+
   #grilla--2 {
     background-image: url(../multimedia/fondoblanco.png);
     padding: 0;
@@ -614,6 +615,7 @@ h1 {
   .tours__mapa {
     padding-top: 1rem;
     padding-bottom: 1rem; }
+
   #grilla--3 {
     background-image: url(../multimedia/fondoblanco.png);
     padding: 0;
@@ -637,6 +639,7 @@ h1 {
     background-color: black; }
   .visuales__fotos li img:hover {
     transform: none; }
+    
   #grilla--4 {
     background-image: url(../multimedia/fondoblanco.png);
     padding: 0;
