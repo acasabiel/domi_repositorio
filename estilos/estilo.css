@@ -1,34 +1,35 @@
-* {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 1em;
-}
-
-/* ----------------- INICIO ------------------- */
-
-body {
-    background-color: black;
-    color: white;
-    width: 100%;    
-}
-
-#grilla--1 {
-    display: grid;
-    grid-template-areas:
-    "header header"
-    "presentacion presentacion"
-    "musica locacion"
-    "footer footer";
-    grid-template-rows: 5% 50% 35% 10%;
-    grid-template-columns: 50% 50%;
-    height: 100%;
-    width: 100%;
-}
-
-header {
+footer {
+    grid-area: footer;
+    background-color: grey;
+    padding-top: 1.3rem;
+    justify-items: center;
+    align-items: center;
+    display: inline-block;
+    text-align: center; }
+    footer h3 {
+      padding-top: 0.4rem;
+      padding-bottom: 0.6rem; }
+    footer p {
+      background-color: black;
+      padding-top: 0.3rem;
+      width: 100%;
+      height: 1.8rem; }
+  
+  .footer__nav {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-items: center; }
+    .footer__nav a {
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
+      display: flex;
+      flex: 1;
+      justify-content: space-around; }
+  
+  header {
     grid-area: header;
     position: static;
     margin-top: 0.6rem;
@@ -41,537 +42,415 @@ header {
     flex-flow: row nowrap;
     justify-items: center;
     align-items: center;
-    width: 100%;
-}
-
-header a img {
-    padding-left: 0.6rem;
-} 
-
-header a img:hover {
-   transform: rotateZ(90deg);
-}    
-
-.header__menu {
-   font-family: 'Raleway', sans-serif;
-   font-style: italic;
-   font-weight: bold;
-   font-size: 1.5em;
-   color: black;
-   display: flex;
-   flex: 1;
-   justify-content: space-around;
-   align-items: center;
-}
-
-.header__menu a {
-   text-decoration: none;
-}
-
-.header__menu a:hover{
-   color: blue;
-   transform: translate(0.3rem, 0.3rem); 
-}
-
-.header__menu--activa {
-   color:blue
-}
-
-.presentacion {
+    width: 100%; }
+    header a img {
+      padding-left: 0.6rem; }
+    header a img:hover {
+      transform: rotateZ(90deg); }
+  
+  .header__menu {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center; }
+    .header__menu a {
+      text-decoration: none; }
+    .header__menu a:hover {
+      color: blue;
+      transform: translate(0.3rem, 0.3rem); }
+  
+  .header__menu--activa {
+    color: blue; }
+  
+  .dropdown {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold; }
+  
+  a.dropdown-item.header__menu--activa {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: blue; }
+  
+  .dropdown-item {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black; }
+  
+  #dropdownMenuButton {
+    border: none;
+    border-radius: 3rem; }
+  
+  .dropdown-menu.show {
+    background-color: white;
+    border-color: black;
+    color: black;
+    border-radius: 2rem; }
+  
+  * {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em; }
+  
+  /* ----------------- INICIO ------------------- */
+  body {
+    background-color: black;
+    color: white;
+    width: 100%; }
+  
+  #grilla--1 {
+    display: grid;
+    grid-template-areas: "header header"
+   "presentacion presentacion"
+   "extras__musica extras__locacion"
+   "footer footer";
+    grid-template-rows: 5% 50% 35% 10%;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    width: 100%; }
+  
+  .presentacion {
     grid-area: presentacion;
     display: block;
     background-image: url(../multimedia/fondoblanco.png);
     text-align: center;
     align-items: center;
     width: 100%;
-    height: 85%;
-}
-
-h1 {
+    height: 85%; }
+    .presentacion video {
+      width: 50rem;
+      border: 0; }
+    .presentacion h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5em;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 4rem;
+      padding-bottom: 2rem; }
+    .presentacion h4 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-style: italic;
+      text-align: center;
+      color: black;
+      background-color: grey;
+      padding-top: 0.9rem;
+      height: 3rem; }
+  
+  h1 {
     padding-top: 6rem;
     padding-bottom: 3rem;
     font-family: 'Raleway', sans-serif;
-    font-size: 4em;
+    font-size: 4.5em;
     font-style: italic;
-    font-weight: 900;
-}
-
-.presentacion video {
-    width: 50rem;
-    border: 0;
-}
-
-.presentacion h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-}
-
-.presentacion h4 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    text-align: center;
-    color: black;
-    background-color: grey;
-    padding-top: 0.9rem;
-    height: 3rem;
-} 
-
-.extras {
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,128,1) 100%);
+    font-weight: 900; }
+  
+  .extras {
+    background: linear-gradient(180deg, black 0%, #07034a 50%, navy 100%);
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     justify-items: center;
-    align-items: center;
-}
-
-.extras__locacion {
-    grid-area: locacion;
-    display: inline-block;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    text-align: center; 
-    width: 50%;    
- }
-
-.extras__locacion iframe {
-    border: 0;
-    border-radius: 1.3rem;
-    width: 25rem;
-    height: 25rem;
-}
-
-.extras__locacion p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.extras__locacion a input {
-    width: 12.5rem;
-    height: 3rem;
-    background-color: white;
-    color: blue;
-    border-style: outset;
-    font-weight: bold;
-    border-radius: 0.6rem;
-    transition: all 2s;
-}
-
-.extras__locacion a input:hover {
-    width: 13rem;
-    height: 3.5rem;
-    border-style: inset;
-    background-color: black;
-}
-
-.extras__musica {
-    grid-area: musica;
+    align-items: center; }
+  
+  .extras__locacion {
+    grid-area: extras__locacion;
     display: inline-block;
     flex: 1;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;     
-}
-
-.extras__musica iframe {
-    border: 0;
-    border-radius: 1.3rem;
-    width: 25rem;
-    height: 34.3rem;
-}
-
-footer {
-    grid-area: footer;
-    background-color: grey;
-    padding-top: 1.3rem;
-    justify-items: center;
-    align-items: center;
+    width: 50%; }
+    .extras__locacion iframe {
+      border: 0;
+      border-radius: 1.3rem;
+      width: 25rem;
+      height: 25rem; }
+    .extras__locacion p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+    .extras__locacion a input {
+      width: 12.5rem;
+      height: 3rem;
+      background-color: white;
+      color: blue;
+      border-style: outset;
+      font-weight: bold;
+      border-radius: 0.6rem;
+      transition: all 2s; }
+    .extras__locacion a input:hover {
+      width: 13rem;
+      height: 3.5rem;
+      border-style: inset;
+      background-color: black; }
+  
+  .extras__musica {
+    grid-area: extras__musica;
     display: inline-block;
-    text-align: center;
-}
-
-footer h3{
-    padding-top: 0.4rem;
-    padding-bottom: 0.6rem;
-}
-
-footer p{
-   background-color: black;
-   padding-top: 0.3rem;
-   width: 100%;
-   height: 1.8rem;
-}
-
-.footer__nav  {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-items: center;
-    align-items: center;
- }
-
-.footer__nav a {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    display: flex;
     flex: 1;
-    justify-content: space-around;
-}
-
-.dropdown {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-}
-
-a.dropdown-item.header__menu--activa {
-       font-family: 'Raleway', sans-serif;
-       font-weight: bold; 
-       color: blue;
-}
-
-.dropdown-item {
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: black;
-}
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%; }
+    .extras__musica iframe {
+      border: 0;
+      border-radius: 1.3rem;
+      width: 25rem;
+      height: 34.3rem; }
   
-#dropdownMenuButton {
-    border: none;
-    border-radius: 3rem;
-}
-  
-.dropdown-menu.show {
-    background-color: white;
-    border-color: black;
-    color: black;
-    border-radius: 2rem;
-}
-
-/* ----------------- RECORRIDOS ------------------- */
-
-#grilla--2 {
+  /* ----------------- RECORRIDOS ------------------- */
+  #grilla--2 {
     display: grid;
-    grid-template-areas:
-    "header header"
-    "videocrew videocrew"
-    "tours--contacto tours--mapa"
-    "footer footer";
+    grid-template-areas: "header header"
+   "videocrew videocrew"
+   "tours__contacto tours__mapa"
+   "footer footer";
     grid-template-rows: 5% 55% 30% 10%;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 20% 80%;
     height: 100%;
-    width: 100%;
-}
-
-.videocrew {
+    width: 100%; }
+  
+  .videocrew {
     grid-area: videocrew;
     display: block;
     text-align: center;
     align-items: center;
     background-image: url(../multimedia/fondoblanco.png);
-}
-
-.videocrew video {
-    width: 25rem;
-    border: 0;
-}
-
-.videocrew h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
-}
-
-.videocrew p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    padding-bottom: 3rem;
-}
-
-.tours {    
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,128,1) 100%);
+    width: 100%; }
+    .videocrew video {
+      width: 25rem;
+      border: 0; }
+    .videocrew h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5em;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem; }
+    .videocrew p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      text-align: center;
+      padding-bottom: 3rem; }
+  
+  .tours {
+    background: linear-gradient(180deg, black 0%, #07034a 50%, navy 100%);
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
     justify-items: center;
     align-items: center;
     padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.tours__contacto {
-    grid-area: tours--contacto;
+    padding-bottom: 3rem; }
+  
+  .tours__contacto {
+    grid-area: tours__contacto;
     display: inline-block;
     flex: 1;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 0.9rem;
-}
-
-.tours__contacto h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    padding-bottom: 0.6rem;
-} 
-
-.tours__contacto a input {
-    width: 12.5rem;
-    height: 3rem;
-    background-color: white;
-    color: blue;
-    border-style: outset;
-    font-weight: bold;
-    border-radius: 0.6rem;
-    transition: all 2s;
-}
-
-.tours__contacto a input:hover {
-    width: 13rem;
-    height: 3.7rem;
-    border-style: inset;
-    background-color: black;
-}
-
-.tours__mapa {
-    grid-area: tours--mapa;
+    padding-bottom: 0.9rem; }
+    .tours__contacto h3 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      padding-bottom: 0.6rem; }
+    .tours__contacto a input {
+      width: 12.5rem;
+      height: 3rem;
+      background-color: white;
+      color: blue;
+      border-style: outset;
+      font-weight: bold;
+      border-radius: 0.6rem;
+      transition: all 2s; }
+    .tours__contacto a input:hover {
+      width: 13rem;
+      height: 3.7rem;
+      border-style: inset;
+      background-color: black; }
+  
+  .tours__mapa {
+    grid-area: tours__mapa;
     display: inline-flex;
     flex: 1;
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
-}
-
-.tours__mapa li {
-    list-style: none;
-    padding-left: 0.9rem;
-    padding-right: 0.9rem;
-}
-
-.tours__mapa iframe {
-    border: 0;
-    border-radius: 1.3rem;
-    width: 12.5rem;
-    height: 12.5rem;
-}
-
-/* ----------------- GALERIA ------------------- */
-
-#grilla--3 {
+    padding-bottom: 1.8rem; }
+    .tours__mapa li {
+      list-style: none;
+      justify-content: space-around; }
+    .tours__mapa iframe {
+      border: 0;
+      border-radius: 1.3rem;
+      width: 12.5rem;
+      height: 12.5rem; }
+  
+  /* ----------------- GALERIA ------------------- */
+  #grilla--3 {
     display: grid;
     grid-template-rows: 7% 10% auto 11%;
     grid-template-columns: 50% 50%;
-    grid-template-areas:
-    "header header"
-    "albumes albumes"
-    "captura fotos"
-    "footer footer";
+    grid-template-areas: "header header"
+   "albumes albumes"
+   "captura fotos"
+   "footer footer";
     height: 100%;
-    width: 100%;    
-}
-
-.albumes {
+    width: 100%; }
+  
+  .albumes {
     grid-area: albumes;
     display: block;
     text-align: center;
     align-items: center;
-    width: 100%;
-}
-
-.visuales {    
+    width: 100%; }
+  
+  .visuales {
     display: inline-flex;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,0,1) 100%);
-}
-
-.visuales__captura {
+    background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%); }
+  
+  .visuales__captura {
     grid-area: captura;
     display: inline-block;
     justify-content: center;
     text-align: center;
     padding-bottom: 0.9rem;
-    width: 50%;
-}
-
-.visuales__captura video {
-    width: 20rem;    
-}
-
-.visuales__captura h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
-}
-
-.visuales__fotos {
+    width: 50%; }
+    .visuales__captura video {
+      width: 20rem; }
+    .visuales__captura h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5em;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem; }
+  
+  .visuales__fotos {
     grid-area: fotos;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;
-}
-
-.visuales__fotos li {
-    list-style: none;
-    display: flex;
-    flex: 1;
-    padding-left: 0.9rem;
-    padding-right: 0.9rem;
-}
-
-.visuales__fotos li img{
-    border: white solid 0.06rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: black;
-}
-
-.visuales__fotos li img:hover {
-    transform: translate(10px, 20px);
-}
-
-/* ----------------- TIENDA ------------------- */
-
-#grilla--4 {
+    width: 50%; }
+    .visuales__fotos li {
+      list-style: none;
+      display: flex;
+      padding-left: 0.9rem;
+      padding-right: 0.9rem; }
+    .visuales__fotos li img {
+      border: white solid 0.06rem;
+      border-radius: 1rem;
+      padding: 1rem;
+      background-color: black; }
+    .visuales__fotos li img:hover {
+      transform: translate(10px, 20px); }
+  
+  /* ----------------- TIENDA ------------------- */
+  #grilla--4 {
     display: grid;
     grid-template-rows: 7% 10% auto 10%;
     grid-template-columns: 50% 50%;
-    grid-template-areas:
-    "header header"
-    "ventas ventas"
-    "listado seleccion"
-    "footer footer";
+    grid-template-areas: "header header"
+   "ventas ventas"
+   "listado seleccion"
+   "footer footer";
     height: 100%;
-    width: 100%;    
-}
-
-.ventas {
+    width: 100%; }
+  
+  .ventas {
     grid-area: ventas;
     display: block;
     text-align: center;
     align-items: center;
-    width: 100%;
-}
-
-.productos {    
+    width: 100%; }
+  
+  .productos {
     display: inline-flex;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(7,3,74,1) 50%, rgba(0,0,0,1) 100%);
-    width: 97%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.listado {
+    background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%);
+    width: 100%; }
+  
+  .listado {
     grid-area: listado;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;
-}
-
-.listado li {
-    list-style: none;
-    display: flex;
-    flex: 1;
-}
-
-.listado li img{
-    border-radius: 1rem;
-}
-
-.listado li img:hover {
-    transform: translate(10px, 20px);
-}
-
-.seleccion {
+    width: 50%; }
+    .listado li {
+      list-style: none;
+      display: flex;
+      flex: 1; }
+    .listado li img {
+      border-radius: 1rem; }
+    .listado li img:hover {
+      transform: translate(10px, 20px); }
+  
+  .seleccion {
     grid-area: seleccion;
     display: inline-block;
     justify-content: center;
     text-align: center;
-    width: 50%;
-}
-
-.seleccion form legend h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
-}
-
-.seleccion img {
-    border-radius: 1rem;
-    padding: 1rem;
-}
-
-.seleccion fieldset {
-    background-color: black;
-    border-radius: 1rem;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.seleccion p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-}
-
-.seleccion form div {
-    font-family: 'Roboto', sans-serif;
-    padding: 1rem;
-}
-
-.seleccion form div select {
-    width: 10rem;
-    height: 2rem;
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    border-radius: 0.5rem;
-    transition: all 2s; 
-}
-
-.seleccion form div select:focus {
-    width: 11rem;
-    height: 3rem;
-
-}
-
-.boton {
+    width: 50%; }
+    .seleccion form legend h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5em;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem; }
+    .seleccion img {
+      border-radius: 1rem;
+      padding: 1rem; }
+    .seleccion fieldset {
+      background-color: black;
+      border-radius: 1rem;
+      justify-content: center;
+      padding: 2rem; }
+    .seleccion p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900; }
+    .seleccion form div {
+      font-family: 'Roboto', sans-serif;
+      padding: 1rem; }
+    .seleccion form div select {
+      width: 10rem;
+      height: 2rem;
+      background-color: white;
+      color: black;
+      font-weight: bolder;
+      border-radius: 0.5rem;
+      transition: all 2s; }
+    .seleccion form div select:focus {
+      width: 11rem;
+      height: 3rem; }
+  
+  .boton {
     width: 12.5rem;
     height: 3rem;
     background-color: white;
@@ -579,269 +458,200 @@ a.dropdown-item.header__menu--activa {
     border-style: outset;
     font-weight: bold;
     border-radius: 0.6rem;
-    transition: all 2s;
-}
-
-.boton:hover {
+    transition: all 2s; }
+  
+  .boton:hover {
     width: 13rem;
     height: 3.7rem;
     border-style: inset;
-    background-color: black;
-}
-
-/* ----------------- CONTACTO ------------------- */
-
-#grilla--5 {
+    background-color: black; }
+  
+  /* ----------------- CONTACTO ------------------- */
+  #grilla--5 {
     display: grid;
     grid-template-rows: 7% auto 11%;
     grid-template-columns: 100%;
-    grid-template-areas:
-    "header"
-    "registro"
-    "footer";
+    grid-template-areas: "header"
+   "registro"
+   "footer";
     height: 100%;
-    width: 100%;    
-}
-
-.registro {
+    width: 100%; }
+  
+  .registro {
     grid-area: registro;
     display: inline-block;
     justify-content: center;
     text-align: center;
-    background-image: url(../multimedia/fondoblanco.png);
-}
-
-.registro fieldset {
-    width: 97%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-color: black;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 1rem;
-}
-
-.registro form legend h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
-}
-
-.registro p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-}
-
-.registro form div {
-    font-family: 'Roboto', sans-serif;
-    padding: 1rem;
-}
-
-.registro form div select {
+    background-image: url(../multimedia/fondoblanco.png); }
+    .registro fieldset {
+      width: 97%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      background-color: black;
+      justify-content: center;
+      padding: 2rem;
+      border-radius: 1rem; }
+    .registro form legend h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5em;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem; }
+    .registro p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900; }
+    .registro form div {
+      font-family: 'Roboto', sans-serif;
+      padding: 1rem; }
+    .registro form div select {
+      width: 10rem;
+      height: 2rem;
+      background-color: white;
+      color: black;
+      font-weight: bolder;
+      border-radius: 0.5rem;
+      transition: all 2s; }
+    .registro form div select:focus {
+      width: 11rem;
+      height: 3rem; }
+  
+  .completar {
     width: 10rem;
     height: 2rem;
     background-color: white;
     color: black;
     font-weight: bolder;
     border-radius: 0.5rem;
-    transition: all 2s; 
-}
-
-.registro form div select:focus {
+    transition: all 2s; }
+  
+  .completar:focus {
     width: 11rem;
-    height: 3rem;
-}
-
-.completar {
-    width: 10rem;
-    height: 2rem;
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    border-radius: 0.5rem;
-    transition: all 2s; 
-}
-
-.completar:focus {
-    width: 11rem;
-    height: 3rem;
-}
-
-/* ------------ MEDIAS QUERIES ---------- */
-
-@media (max-width: 768px) { 
-
-    #grilla--1{
-        background-image: url(../multimedia/fondoblanco.png);
-        padding: 0;
-        margin: 0;
-    }
-
+    height: 3rem; }
+  
+  /* ----------------- MEDIA QUERIES ------------------- */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 3.5em; }
     header {
-        background-color: unset;
-    }
-    .presentacion {
-        height: fit-content;
-        width: fit-content;
-        background-image: none;
-        margin-left: 1rem;
-    }
-    .presentacion video {
-        width: 20rem;
-    }
-    .presentacion h2 {
-        font-weight: 300;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    .presentacion h4 {
-        font-weight: 200;
-        color: white;
-        background-color: unset;
-        height: fit-content;
-    }
-    .extras__locacion iframe {
-        width: 15rem;
-        height: 15rem;
-    }
-    .extras__musica iframe {
-        width: 15rem;
-        height: 20.3rem;
-    }
+      background-color: unset; }
     footer {
-        height: fit-content;
-        padding-top: 0.6rem;
-    }
-    footer p{
-       height: fit-content;
-       font-size: 1rem;
-    }   
-}
-
-@media (min-width: 768px) {
+      height: fit-content;
+      padding-top: 0.6rem; }
+    footer h3 {
+      font-size: 1rem; }
+    footer p {
+      height: fit-content;
+      font-size: 0.8rem; } }
+  
+  @media (min-width: 768px) {
     header {
-        background-color: white;
-    }
-}
-
-@media (max-width: 768px) { 
-
-    #grilla--2{
-        background-image: url(../multimedia/fondoblanco.png);
-        padding: 0;
-        margin: 0;
-    }
-
+      background-color: white; } }
+  
+  @media (max-width: 1024px) {
+    .tours__mapa li h2 {
+      font-size: 1em;
+      font-weight: 300;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+    .tours__mapa iframe {
+      width: 10rem;
+      height: 10rem; }
+    .tours__mapa {
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+  
+  @media (max-width: 768px) {
+    #grilla--1 {
+      background-image: url(../multimedia/fondoblanco.png);
+      padding: 0;
+      margin: 0; }
+    .presentacion {
+      height: fit-content;
+      width: fit-content;
+      background-image: none;
+      margin-left: 1rem; }
+    .presentacion video {
+      width: 20rem; }
+    .presentacion h2 {
+      font-weight: 300;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+    .presentacion h4 {
+      font-weight: 200;
+      color: white;
+      background-color: unset;
+      height: fit-content; }
+    .extras__locacion iframe {
+      width: 15rem;
+      height: 15rem; }
+    .extras__musica iframe {
+      width: 15rem;
+      height: 20.3rem; }
+    #grilla--2 {
+      background-image: url(../multimedia/fondoblanco.png);
+      padding: 0;
+      margin: 0; }
     .videocrew {
-        height: fit-content;
-        width: fit-content;
-        background-image: none;
-        margin-left: 1rem;
-    }
+      height: fit-content;
+      width: fit-content;
+      background-image: none;
+      margin-left: 1rem; }
     .videocrew video {
-        width: 18rem;
-    }
+      width: 18rem; }
     .videocrew h2 {
-        font-weight: 300;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
+      font-weight: 300;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
     .tours__mapa li h2 {
-        font-size: 1em;
-        font-weight: 300;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
+      font-size: 1em;
+      font-weight: 300;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
     .tours__mapa iframe {
-        width: 10rem;
-        height: 10rem;
-    }
+      width: 10rem;
+      height: 10rem; }
     .tours__mapa {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-}
-
-@media (max-width: 1024px) { 
-    .tours__mapa li h2 {
-        font-size: 1em;
-        font-weight: 300;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    .tours__mapa iframe {
-        width: 10rem;
-        height: 10rem;
-    }
-    .tours__mapa {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-
-#grilla--3 {
-        background-image: url(../multimedia/fondoblanco.png);
-        padding: 0;
-        margin: 0;
-    }    
-
-.albumes {
-       height: fit-content;
-        width: fit-content;
-        background-image: none;
-        margin-left: 2rem;
-    }
-
-.visuales__captura video {
-    width: 15rem;    
-}
-
-.visuales__captura h2 {
-    font-size: 1em;
-    font-weight: 300;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.visuales__fotos li img{
-    border: white solid 0.03rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: black;
-}
-}
-
-@media (max-width: 768px) {
-
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+    #grilla--3 {
+      background-image: url(../multimedia/fondoblanco.png);
+      padding: 0;
+      margin: 0; }
+    .albumes {
+      height: fit-content;
+      width: fit-content;
+      background-image: none; }
+    .visuales__captura video {
+      width: 15rem; }
+    .visuales__captura h2 {
+      font-size: 1em;
+      font-weight: 300;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      text-align: center; }
+    .visuales__fotos li img {
+      border: white solid 0.03rem;
+      border-radius: 1rem;
+      padding: 1rem;
+      background-color: black; }
+    .visuales__fotos li img:hover {
+      transform: none; }
     #grilla--4 {
-            background-image: url(../multimedia/fondoblanco.png);
-            padding: 0;
-            margin: 0;
-        }    
-    
+      background-image: url(../multimedia/fondoblanco.png);
+      padding: 0;
+      margin: 0; }
     .ventas {
-           height: fit-content;
-            width: fit-content;
-            background-image: none;
-    }
-    
+      height: fit-content;
+      width: fit-content;
+      background-image: none; }
     .seleccion fieldset legend {
-        font-size: 1em;
-        font-weight: 300;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
+      font-size: 1em;
+      font-weight: 300;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
     .seleccion p {
-        font-weight: 500;
-    }
+      font-weight: 500; }
     .seleccion img {
-        width: 15rem;
-        font-weight: 500;
-    }
-    
-}
+      width: 15rem;
+      font-weight: 500; } }  
