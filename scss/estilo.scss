@@ -1,6 +1,13 @@
 @import "footer";
 @import "header";
 
+/* ------VARIABLES------- */
+$radius: 0.6rem;
+$paddingtop1: 0.6rem;
+$paddingbottom1: 0.6rem;
+$paddingtop2: 2rem;
+$paddingbottom2: 2rem;
+
 * {
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -46,8 +53,8 @@ h1 {
     text-align: center;
     color: black;
     background-color: grey;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding-top: $paddingtop1;
+    padding-bottom: $paddingbottom1;
     height: 3rem; }
 }
     
@@ -55,8 +62,8 @@ h1 {
     background: linear-gradient(180deg, black 0%, #07034a 50%, navy 100%);
     display: flex;
     flex-flow: row nowrap;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: $paddingtop2;
+    padding-bottom: $paddingbottom2;
     justify-items: center;
     align-items: center;
     h2 {
@@ -64,8 +71,8 @@ h1 {
     font-size: 2em;
     font-weight: 500;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }    
+    padding-top: $paddingtop2;
+    padding-bottom: $paddingbottom2; }    
 }
 
 .extras__locacion {
@@ -85,8 +92,8 @@ h1 {
     font-weight: 300;
     font-style: italic;
     text-align: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem; }
+    padding-top: $paddingtop1;
+    padding-bottom: $paddingbottom1; }
     a input {
     width: 12.5rem;
     height: 3rem;
@@ -94,7 +101,7 @@ h1 {
     color: blue;
     border-style: outset;
     font-weight: bold;
-    border-radius: 0.6rem;
+    border-radius: $radius;
     transition: all 1s; }
     a input:hover {
     width: 13rem;
@@ -125,16 +132,16 @@ h1 {
   
 .visuales {
     display: inline-flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: $paddingtop2;
+    padding-bottom: $paddingbottom2;
     background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%); }
   
 .visuales__captura {
     display: inline-block;
     justify-content: center;
     text-align: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding-top: $paddingtop1;
+    padding-bottom: $paddingbottom1;
     width: 50%;
     video {
     width: 20rem;
@@ -144,15 +151,15 @@ h1 {
     font-size: 2em;
     font-weight: 500;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
+    padding-top: $paddingtop2;
+    padding-bottom: $paddingbottom2; }
     p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
     text-align: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem; }    
+    padding-top: $paddingtop1;
+    padding-bottom: $paddingbottom1; }    
 }
 
 .visuales__fotos {
@@ -191,14 +198,14 @@ h1 {
     font-weight: 500;
     text-align: center;
     padding-top: 3rem;
-    padding-bottom: 2rem; }
+    padding-bottom: $paddingbottom2; }
     p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
     text-align: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem; }
+    padding-top: $paddingtop1;
+    padding-bottom: $paddingbottom1; }
 }
 
 .tours {
@@ -222,8 +229,8 @@ h1 {
     font-size: 2em;
     font-weight: 300;
     text-align: center;
-    padding-bottom: 0.6rem;
-    padding-top: 0.6rem;}
+    padding-top: $paddingtop1;
+    padding-bottom: $paddingbottom1;}
     a input {
     width: 12.5rem;
     height: 3rem;
@@ -231,7 +238,7 @@ h1 {
     color: blue;
     border-style: outset;
     font-weight: bold;
-    border-radius: 0.6rem;
+    border-radius: $radius;
     transition: all 1s; }
     a input:hover {
     width: 13rem;
@@ -243,8 +250,8 @@ h1 {
 .tours__mapa {
     display: inline-flex;
     flex: 1;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding-top: $paddingtop1;
+    padding-bottom: $paddingbottom1;
     li {
     list-style: none;
     justify-content: space-evenly;
@@ -258,8 +265,8 @@ h1 {
     iframe {
     border: 0;
     border-radius: 1rem;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
+    padding-top: $paddingtop1;
+    padding-bottom: $paddingbottom1;
     width: 12rem;
     height: 12rem; }
 }
@@ -272,8 +279,8 @@ h1 {
   
 .productos {
     display: inline-flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: $paddingtop2;
+    padding-bottom: $paddingbottom2;
     background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%); }
   
 .listado {
@@ -303,8 +310,8 @@ h1 {
     font-size: 1.5em;
     font-weight: 500;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
+    padding-top: $paddingtop2;
+    padding-bottom: $paddingbottom2; }
     img {
     border-radius: 1rem; }
     fieldset {
@@ -324,7 +331,7 @@ h1 {
     background-color: white;
     color: black;
     font-weight: bolder;
-    border-radius: 0.6rem;
+    border-radius: $radius;
     transition: all 1s; }
     form div select:focus {
     width: 11rem;
@@ -338,7 +345,7 @@ h1 {
     color: blue;
     border-style: outset;
     font-weight: bold;
-    border-radius: 0.6rem;
+    border-radius: $radius;
     transition: all 1s; }
   
 .boton:hover {
@@ -365,14 +372,14 @@ h1 {
     font-weight: 500;
     text-align: center;
     padding-top: 3rem;
-    padding-bottom: 2rem; }
+    padding-bottom: $paddingbottom2; }
     p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
     text-align: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem; }
+    padding-top: $paddingtop1;
+    padding-bottom: $paddingbottom1; }
     form div {
     font-family: 'Roboto', sans-serif;
     padding: 1rem; }
@@ -382,7 +389,7 @@ h1 {
     background-color: white;
     color: black;
     font-weight: bolder;
-    border-radius: 0.6rem;
+    border-radius: $radius;
     transition: all 1s; }
     form div select:focus {
     width: 11rem;
@@ -395,7 +402,7 @@ h1 {
     background-color: white;
     color: black;
     font-weight: bolder;
-    border-radius: 0.6rem;
+    border-radius: $radius;
     transition: all 1s; }
   
 .completar:focus {
