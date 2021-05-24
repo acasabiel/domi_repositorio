@@ -2,9 +2,7 @@ footer {
   display: grid;
   grid-template-rows: 4rem 20rem 2rem;
   grid-template-columns: repeat(2, 2fr);
-  grid-template-areas: "piedepagina piedepagina"
- "img redes"
- "p p";
+  grid-template-areas: "piedepagina piedepagina" "img redes" "p p";
   gap: 1rem;
   background-color: grey;
   padding-top: 2rem;
@@ -636,9 +634,7 @@ h1 {
 
 @media (min-width: 768px) {
   header {
-    background-color: white; }
-  .presentacion {
-    background-image: url(../multimedia/fondoblanco.png); } }
+    background-color: white; } }
 
 @media (max-width: 1024px) {
   .tours__mapa li h2 {
