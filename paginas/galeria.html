@@ -17,7 +17,7 @@
 
 <body class="container-fluid">
 
-    <header class="d-flex justify-content-start justify-content-md-center align-items-center w-100">
+    <header class="d-flex justify-content-start justify-content-md-center">
         <a href="../index.html"> <img class="d-none d-md-block" src="../multimedia/logonegro.png" alt="Logo con la silueta de una rueda de bicicleta" title="Logo"> </a>
         <nav class="header__menu row d-none d-md-flex text-center justify-content-around">
             <a href="../index.html" class="col-12 col-md-2"> Inicio </a>
@@ -29,7 +29,7 @@
         <div class="dropright d-flex d-md-none">
           <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img class="img-circle pt-1 pb-1" src="../multimedia/logonegro.png" alt="Logo con la silueta de una rueda de bicicleta que funciona como botón de menú" title="menu">
-            <h2> MENU </h2>               
+            <h2 class="pt-1 pb-1"> MENU </h2>               
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="../index.html"> Inicio</a>
@@ -41,20 +41,20 @@
         </div> 
     </header>
 
-    <main class="albumes row d-block justify-content-center align-items-center w-100">
+    <main class="albumes justify-content-center">
 
         <h1 class="wow animate__animated animate__lightSpeedInLeft col-12 text-center"> Rodando Buenos Aires </h1>
 
-        <div class="visuales row d-block d-md-inline-flex align-items-center justify-content-around">
+        <div class="visuales d-block d-md-inline-flex justify-content-around">
 
-          <section class="visuales__captura d-block justify-content-center col-12 col-lg-4 w-100">
-            <h2 class="text-center pl-2"> Galería </h2>
-            <p class="text-center pl-2">No sólo es recorrer la ciudad en bicicleta, también es capturarla en fotografías</p>
+          <section class="visuales__captura d-block justify-content-center col-12 col-lg-4">
+            <h2 class="text-center"> Galería </h2>
+            <p class="text-center">No sólo es recorrer la ciudad en bicicleta, también es capturarla en fotografías</p>
             <video src="../multimedia/capturadefotos.mp4" type="video/mp4" controls autoplay></video>
           </section>          
 
-          <ul class="visuales__fotos row d-inline-flex justify-content-around">
-            <li class="col-5 col-md-4 pl-0 pt-2 pb-2">
+          <ul class="visuales__fotos row d-inline-flex justify-content-center">
+            <li class="col-4 pt-1 pb-1">
                 <a href="#" data-toggle="modal" data-target="#fotografía1">
                     <img src="../multimedia/amarillo.png" class="card-img-top" alt="Foto del Barrio Recoleta">
                 </a>
@@ -64,7 +64,7 @@
                   </div>
                 </div>
             </li>
-            <li class="col-5 col-md-4 pl-0 pt-2 pb-2">
+            <li class="col-4 pt-1 pb-1">
                 <a href="#" data-toggle="modal" data-target="#fotografía2">
                     <img src="../multimedia/azul.png" class="card-img-top" alt="Foto del Barrio Belgrano">
                 </a>           
@@ -74,7 +74,7 @@
                   </div>
                 </div>
             </li>
-            <li class="col-5 col-md-4 pl-0 pt-2 pb-2">
+            <li class="col-4 pt-1 pb-1">
                 <a href="#" data-toggle="modal" data-target="#fotografía3">
                     <img src="../multimedia/marron.png" class="card-img-top" alt="Foto del Barrio Palermo">
                 </a>           
@@ -84,7 +84,7 @@
                   </div>
                 </div>
             </li>
-            <li class="col-5 col-md-4 pl-0 pt-2 pb-2">
+            <li class="col-4 pt-1 pb-1">
               <a href="#" data-toggle="modal" data-target="#fotografía4">
                   <img src="../multimedia/verde.png" class="card-img-top" alt="Foto del Barrio Puerto Madero">
               </a>           
@@ -94,7 +94,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-5 col-md-4 pl-0 pt-2 pb-2">
+            <li class="col-4 pt-1 pb-1">
                 <a href="#" data-toggle="modal" data-target="#fotografía5">
                     <img src="../multimedia/blanco.png" class="card-img-top" alt="Foto del Barrio Retiro">
                 </a>           
@@ -104,7 +104,7 @@
                   </div>
                 </div>
             </li>
-            <li class="col-5 col-md-4 pl-0 pt-2 pb-2">
+            <li class="col-4 pt-1 pb-1">
                 <a href="#" data-toggle="modal" data-target="#fotografía6">
                     <img src="../multimedia/rojo.png" class="card-img-top" alt="Foto del Barrio La Boca">
                 </a>           
@@ -120,24 +120,12 @@
 
        </main>
     
-     <footer class="row d-block d-md-flex justify-content-center w-100">
+    <footer class="row d-md-flex justify-content-around">
 
-        <section class="piedepagina d-none d-md-block w-100">
-        <img src="../multimedia/line.png" alt="Línea de separación y decoración" title="Línea">
-        <nav class="piedepagina__menu">
-            <a href="../index.html"> Inicio </a>
-            <a href="#"> Galería </a>
-            <a href="recorridos.html"> Recorridos </a>
-            <a href="tienda.html"> Tienda </a>
-            <a href="contacto.html"> Contacto </a>
-        </nav>
-        </section>
-        
-        <img src="../multimedia/footer.png" alt="Logo con la silueta de una rueda de bicicleta con mensaje" title="Logo">
-
+        <img class="rodando" src="../multimedia/footer.png" alt="Logo con la silueta de una rueda de bicicleta con mensaje" title="Logo">
+     
         <section class="redes d-block text-center">
-        <p class="d-none d-md-block">No te pierdas nada de esta experiencia,</br> búscame en redes sociales como:</p>
-        <h3> @dominiquelabici </h3>
+        <h3>Búscame en redes sociales como: @dominiquelabici </h3>
         <nav  class="redes__nav">
             <a href="https://es-la.facebook.com/dominiquelabici" target="_blank"> <img src="../multimedia/facebook.png"> </a> 
             <a href="https://www.instagram.com/dominiquelabici/?hl=es-la" target="_blank"> <img src="../multimedia/instagram.png"> </a>
@@ -146,7 +134,7 @@
         </nav>
         </section>  
 
-        <p class="text-center">Copyright &copy; 2021 Por: Lorena Casabiel, todos los derechos reservados.</p>
+        <p class="text-center col-12">Copyright &copy; 2021 Por: Lorena Casabiel, todos los derechos reservados.</p>
 
     </footer>
 

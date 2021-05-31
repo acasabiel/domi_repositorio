@@ -90,7 +90,6 @@ p {
   align-items: center;
   text-align: center;
   iframe {
-  border: 0;
   border-radius: 1.3rem;
   width: 25rem;
   height: 25rem; }
@@ -121,17 +120,17 @@ p {
   align-items: center;
   text-align: center;
   iframe {
-  border: 0;
   border-radius: 1.3rem;
   width: 25rem;
   height: 34.3rem; }
 }
 
 .albumes {
-  display: block;
-  text-align: center;
-  align-items: center;
-  width: 100%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-top: $padding2;
+    padding-bottom: $padding2;
 }
   
 .visuales {
@@ -145,26 +144,14 @@ p {
   display: inline-block;
   justify-content: center;
   text-align: center;
-  padding-top: $padding1;
-  padding-bottom: $padding1;
-  width: 50%;
+  padding: $padding1;
   video {
   width: 20rem;
   border: 0; }
   h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  font-weight: 500;
-  text-align: center;
-  padding-top: $padding2;
-  padding-bottom: $padding2; }
+  text-align: center; }
   p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  padding-top: $padding1;
-  padding-bottom: $padding1; }    
+  text-align: center; }    
 }
 
 .visuales__fotos {
@@ -173,7 +160,6 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50%;
   li {
   list-style: none;
   display: flex;
@@ -461,6 +447,7 @@ p {
   background-size: 400px; 
   background-color: unset;
   }
+
   .presentacion {
   background-image: none;
   }
@@ -490,27 +477,27 @@ p {
   background-color: black;
   }
 
-    .albumes {
-      height: fit-content;
-      width: fit-content;
-      background-image: none; }
-    .visuales__captura video {
-      width: 15rem; }
-    .visuales__captura h2 {
-      font-weight: 300;
-      padding-top: 2rem;
-      padding-bottom: 2rem; }
-    .visuales__fotos li img {
-      border: white solid 0.03rem;
-      border-radius: 1rem;
-      padding: 1rem;
-      width: 80px;
-      background-color: black; }
-    .visuales__fotos li img:hover {
-      transform: none; }
+  .albumes {
+  height: fit-content;
+  width: fit-content;
+  background-image: none; }
+  .visuales__captura video {
+  width: 15rem; }
+  .visuales__captura h2 {
+  font-weight: 300;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .visuales__fotos li img {
+  border: white solid 0.03rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 80px;
+  background-color: black; }
+  .visuales__fotos li img:hover {
+  transform: none; }
 
-    .videocrew {
-      height: fit-content;
+  .videocrew {
+    height: fit-content;
       width: fit-content;
       background-image: none;}
     .videocrew video {
