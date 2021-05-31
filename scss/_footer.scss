@@ -1,93 +1,30 @@
 footer {
-    display: grid;
-    grid-template-rows: 4rem 20rem 2rem;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-areas:
-    "piedepagina piedepagina"
-    "img redes"
-    "p p";
-    gap: 1rem; 
     background-color: grey;
     padding-top: 2rem;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-}    
-        
-.piedepagina {
-    grid-area: piedepagina;
-    display: block;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    width: 100%; }
+    margin: 0;
+    p {
+    background-color: black;
+    width: 100%; }  
+}  
 
-.piedepagina__menu {
+.rodando {
+    padding-bottom: 2rem;
+}  
+        
+.redes {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
     justify-items: center;
     align-items: center;
-    a {
-    flex: 1;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.5em;
-    color: black;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-}
-    a:hover {
-    color: white;
-    text-decoration: none;
-    transform: translate(0.3rem, 0.3rem); }
-}
-
-footer img {
-     grid-area: img;
-     padding-left: 0.6rem;
-     padding-right: 0.6rem;}
-
-.redes {
-    grid-area: redes;
-    display: inline-block;
-    p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    font-size: 1.5em;
-    color: black;
-    background-color: white;
-    border-radius: 4rem;
-    height: 8rem;
-    padding: 2rem;}
     h3 {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    color: black;
-    font-size: 2em; }
+    padding-top: 1rem;
+    font-size: 2em;
+    color: white }
 }
 
 .redes__nav {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
     display: flex;
-    flex-flow: row nowrap;
-    justify-items: center;
-    align-items: center;
-    a {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
     flex: 1;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding-bottom: 2rem;    
 }
-
-footer p {
-    grid-area: p;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: black;
-    width: 100%; }  

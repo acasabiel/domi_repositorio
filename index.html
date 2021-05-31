@@ -17,19 +17,19 @@
 
 <body class="container-fluid">
 
-        <header class="d-flex justify-content-start justify-content-md-center align-items-center w-100">
+        <header class="d-flex justify-content-start justify-content-md-center">
             <a href="index.html"> <img class="d-none d-md-block" src="multimedia/logonegro.png" alt="Logo con la silueta de una rueda de bicicleta" title="Logo"> </a>
             <nav class="header__menu row d-none d-md-flex text-center justify-content-around">
-                    <a href="#" class="col-12 col-md-2 text-dark"> Inicio </a>
-                    <a href="paginas/galeria.html" target="_blank" class="col-12 col-md-2 text-dark"> Galería </a>
-                    <a href="paginas/recorridos.html" target="_blank" class="col-12 col-md-2 text-dark"> Recorridos </a>
-                    <a href="paginas/tienda.html" target="_blank" class="col-12 col-md-2 text-dark"> Tienda </a>
-                    <a href="paginas/contacto.html" target="_blank" class="col-12 col-md-2 text-dark"> Contacto </a>
+                    <a href="#" class="header__menu--activa col-12 col-md-2"> Inicio </a>
+                    <a href="paginas/galeria.html" class="col-12 col-md-2"> Galería </a>
+                    <a href="paginas/recorridos.html" class="col-12 col-md-2"> Recorridos </a>
+                    <a href="paginas/tienda.html" class="col-12 col-md-2"> Tienda </a>
+                    <a href="paginas/contacto.html" class="col-12 col-md-2"> Contacto </a>
             </nav>
             <div class="dropright d-flex d-md-none">
                 <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img class="img-circle pt-1 pb-1" src="../multimedia/logonegro.png" alt="Logo con la silueta de una rueda de bicicleta que funciona como botón de menú" title="menu">
-                  <h2> MENU </h2>               
+                  <h2 class="pt-1 pb-1"> MENU </h2>               
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item header__menu--activa" href="#"> Inicio</a>
@@ -41,24 +41,24 @@
             </div>    
         </header>
     
-        <main class="presentacion row d-block justify-content-center align-items-center w-100">
+        <main class="presentacion justify-content-center">
                
             <h1 class="wow animate__animated animate__lightSpeedInLeft col-12 text-center"> Rodando Buenos Aires </h1>
             <video class="col-12" src="multimedia/dominique.mp4" type="video/mp4" controls autoplay> </video>
-            <h2 class="col-12"> Junto a Dominique la bicicleta </h2>
-            <h4 class="col-12"> Soy una bici, no un humano. El plan es recorrer los 48 barrios de Buenos Aires y capturarlos en fotografías </h4>
+            <h3 class="col-12"> Junto a Dominique la bicicleta </h3>
+            <p class="col-12"> Soy una bici, no un humano. El plan es recorrer los 48 barrios de Buenos Aires y capturarlos en fotografías </p>
             
-            <div class="extras row d-block d-lg-flex align-items-center justify-content-center w-100">
+            <div class="extras d-block d-lg-flex align-items-center justify-content-center">
 
-                <section class="extras__locacion  d-block justify-content-center col-12 col-lg-6 w-100">
+                <section class="extras__locacion d-block justify-content-center col-12 col-lg-6">
                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d105210.39576838499!2d-58.5671906020813!3d-34.50732395135607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x95bcb58308725845%3A0x6c1301b2924b8a91!2sPlaza%20Italia%2C%20Buenos%20Aires!3m2!1d-34.581084499999996!2d-58.4210584!4m5!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.425087!2d-58.5796585!5e0!3m2!1ses!2sar!4v1614110803922!5m2!1ses!2sar"></iframe>
-                   <h2 class="text-center"> Conozcamos Buenos Aires en bicicleta </h2>
-                   <p class="text-center"> Entonces acompañame en mis recorridos por los diferentes barrios de la ciudad. </br> Para saber más sobre estos paseos visita la sección "Recorridos"</p>
+                   <h2 class="col-12 col-lg-6 text-center"> Conozcamos Buenos Aires en bicicleta </h2>
+                   <p class="col-12 col-lg-6 text-center"> Entonces acompañame por los diferentes barrios de la ciudad. </br> Para saber más, visita la sección "Recorridos"</p>
                    <a href="paginas/recorridos.html" target="_blank"> <input type="button" value="VER RECORRIDOS"/></a>
                 </section>
 
-                <section class="extras__musica justify-content-center d-block col-12 col-lg-6 w-100">
-                    <h2 class="text-center"> Música para recorrer la ciudad </h2>
+                <section class="extras__musica justify-content-center d-block col-12 col-lg-6">
+                    <h2 class="col-12 col-lg-6 text-center"> Música para recorrer la ciudad </h2>
                     <iframe src="https://open.spotify.com/embed/playlist/50R2sDpdZVKmGYcjqoSNqs"></iframe>
                  </section>
                  
@@ -66,24 +66,13 @@
 
         </main>
 
-        <footer class="row d-block d-md-flex justify-content-center w-100">
 
-            <section class="piedepagina d-none d-md-block w-100">
-            <img src="multimedia/line.png" alt="Línea de separación y decoración" title="Línea">
-            <nav class="piedepagina__menu">
-                <a href="#"> Inicio </a>
-                <a href="paginas/galeria.html" target="_blank"> Galería </a>
-                <a href="paginas/recorridos.html" target="_blank"> Recorridos </a>
-                <a href="paginas/tienda.html" target="_blank"> Tienda </a>
-                <a href="paginas/contacto.html" target="_blank"> Contacto </a>
-            </nav>
-            </section>
-            
-            <img src="multimedia/footer.png" alt="Logo con la silueta de una rueda de bicicleta con mensaje" title="Logo">
+       <footer class="row d-md-flex justify-content-around">
 
+            <img class="rodando" src="multimedia/footer.png" alt="Logo con la silueta de una rueda de bicicleta con mensaje" title="Logo">
+         
             <section class="redes d-block text-center">
-            <p class="d-none d-md-block">No te pierdas nada de esta experiencia,</br> búscame en redes sociales como:</p>
-            <h3> @dominiquelabici </h3>
+            <h3>Búscame en redes sociales como: @dominiquelabici </h3>
             <nav  class="redes__nav">
                 <a href="https://es-la.facebook.com/dominiquelabici" target="_blank"> <img src="multimedia/facebook.png"> </a> 
                 <a href="https://www.instagram.com/dominiquelabici/?hl=es-la" target="_blank"> <img src="multimedia/instagram.png"> </a>
@@ -92,7 +81,7 @@
             </nav>
             </section>  
 
-            <p class="text-center">Copyright &copy; 2021 Por: Lorena Casabiel, todos los derechos reservados.</p>
+            <p class="text-center col-12">Copyright &copy; 2021 Por: Lorena Casabiel, todos los derechos reservados.</p>
     
         </footer>
 

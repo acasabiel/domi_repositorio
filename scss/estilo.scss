@@ -1,461 +1,494 @@
 @import "footer";
 @import "header";
 
-/* ------VARIABLES------- */
 $radius: 0.6rem;
-$paddingtop1: 0.6rem;
-$paddingbottom1: 0.6rem;
-$paddingtop2: 2rem;
-$paddingbottom2: 2rem;
+$padding1: 0.6rem;
+$padding2: 2rem;
 
 * {
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;}
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: fit-content;}
-
-.container-fluid {
-    padding-right: 0px; }
+  background-color: black;
+  color: white;
+  height: fit-content;
+}
 
 h1 {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-    font-size: 5em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 500; }
-    
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 6em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  padding-top: $padding2;
+  padding-bottom: $padding2;
+  font-size: 3em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 200;
+}
+
+h3 {
+  padding-top: $padding2;
+  padding-bottom: $padding2;
+  font-size: 3em;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+h4 {
+  padding-top: $padding2;
+  padding-bottom: $padding2;
+  font-family: 'Roboto';
+  font-weight: 200;
+}
+
+p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Roboto';
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: italic;
+}
+
 .presentacion {
-    display: block;
-    background-image: url(../multimedia/fondoblanco.png);
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    .presentacion video {
-    width: 50rem;
-    border: 0; }
-    .presentacion h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem; }
-    .presentacion h4 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    color: black;
-    background-color: grey;
-    padding-top: $paddingtop1;
-    padding-bottom: $paddingbottom1;
-    height: 3rem; }
+  display: block;
+  background-image: url(../multimedia/fondoblanco.png);
+  text-align: center;
+  align-items: center;
+  video {
+  padding-top: $padding2;
+  padding-bottom: $padding2; 
+  width: 50rem;
+  border: 0; }
+  p {
+  padding-top: 1rem;  
+  text-align: center;
+  color: black;
+  background-color: grey;}
 }
     
 .extras {
-    background: linear-gradient(180deg, black 0%, #07034a 50%, navy 100%);
-    display: flex;
-    flex-flow: row nowrap;
-    padding-top: $paddingtop2;
-    padding-bottom: $paddingbottom2;
-    justify-items: center;
-    align-items: center;
-    h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: $paddingtop2;
-    padding-bottom: $paddingbottom2; }    
+  background: linear-gradient(180deg, black 0%, #07034a 50%, navy 100%);
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: $padding2;
+  padding-bottom: $padding2;
 }
 
 .extras__locacion {
-    display: inline-block;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50%;
-    iframe {
-    border: 0;
-    border-radius: 1.3rem;
-    width: 25rem;
-    height: 25rem; }
-    p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    padding-top: $paddingtop1;
-    padding-bottom: $paddingbottom1; }
-    a input {
-    width: 12.5rem;
-    height: 3rem;
-    background-color: white;
-    color: blue;
-    border-style: outset;
-    font-weight: bold;
-    border-radius: $radius;
-    transition: all 1s; }
-    a input:hover {
-    width: 13rem;
-    height: 3.5rem;
-    border-style: inset;
-    background-color: black; }
+  display: inline-block;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  iframe {
+  border: 0;
+  border-radius: 1.3rem;
+  width: 25rem;
+  height: 25rem; }
+  p {    
+  text-align: center;
+  color: white;
+  background-color: transparent;}
+  a input {
+  width: 12.5rem;
+  height: 3rem;
+  background-color: white;
+  color: blue;
+  border-style: outset;
+  font-weight: bold;
+  border-radius: $radius;
+  transition: all 1s; }
+  a input:hover {
+  width: 13rem;
+  height: 3.5rem;
+  border-style: inset;
+  background-color: black; }
 }
 
 .extras__musica {
-    display: inline-block;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50%;
-    iframe {
-    border: 0;
-    border-radius: 1.3rem;
-    width: 25rem;
-    height: 34.3rem; }
+  display: inline-block;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  iframe {
+  border: 0;
+  border-radius: 1.3rem;
+  width: 25rem;
+  height: 34.3rem; }
 }
 
 .albumes {
-    display: block;
-    text-align: center;
-    align-items: center;
-    width: 100%; }
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
   
 .visuales {
-    display: inline-flex;
-    padding-top: $paddingtop2;
-    padding-bottom: $paddingbottom2;
-    background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%); }
+  display: inline-flex;
+  padding-top: $padding2;
+  padding-bottom: $padding2;
+  background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%);
+}
   
 .visuales__captura {
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    padding-top: $paddingtop1;
-    padding-bottom: $paddingbottom1;
-    width: 50%;
-    video {
-    width: 20rem;
-    border: 0; }
-    h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: $paddingtop2;
-    padding-bottom: $paddingbottom2; }
-    p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    padding-top: $paddingtop1;
-    padding-bottom: $paddingbottom1; }    
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  padding-top: $padding1;
+  padding-bottom: $padding1;
+  width: 50%;
+  video {
+  width: 20rem;
+  border: 0; }
+  h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  padding-top: $padding2;
+  padding-bottom: $padding2; }
+  p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  padding-top: $padding1;
+  padding-bottom: $padding1; }    
 }
 
 .visuales__fotos {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50%;
-    li {
-    list-style: none;
-    display: flex;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    li img {
-    border: white solid 0.06rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: black; }
-    li img:hover {
-    transform: translate(10px, 20px); }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  li {
+  list-style: none;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  li img {
+  border: white solid 0.06rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: black; }
+  li img:hover {
+  transform: translate(10px, 20px); }
 }
 
 .videocrew {
-    display: block;
-    text-align: center;
-    align-items: center;
-    background-image: url(../multimedia/fondoblanco.png);
-    width: 100%;
-    video {
-    width: 25rem;
-    border: 0; }
-    h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: $paddingbottom2; }
-    p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    padding-top: $paddingtop1;
-    padding-bottom: $paddingbottom1; }
+  display: block;
+  text-align: center;
+  align-items: center;
+  background-image: url(../multimedia/fondoblanco.png);
+  width: 100%;
+  video {
+  width: 25rem;
+  border: 0; }
+  h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: $padding2; }
+  p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  padding-top: $padding1;
+  padding-bottom: $padding1; }
 }
 
 .tours {
-    background: linear-gradient(180deg, black 0%, #07034a 50%, navy 100%);
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    justify-items: center;
-    align-items: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem; }
+  background: linear-gradient(180deg, black 0%, #07034a 50%, navy 100%);
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
   
 .tours__contacto {
-    display: block;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 300;
-    text-align: center;
-    padding-top: $paddingtop1;
-    padding-bottom: $paddingbottom1;}
-    a input {
-    width: 12.5rem;
-    height: 3rem;
-    background-color: white;
-    color: blue;
-    border-style: outset;
-    font-weight: bold;
-    border-radius: $radius;
-    transition: all 1s; }
-    a input:hover {
-    width: 13rem;
-    height: 3.7rem;
-    border-style: inset;
-    background-color: black; }
+  display: block;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  padding-top: $padding1;
+  padding-bottom: $padding1;}
+  a input {
+  width: 12.5rem;
+  height: 3rem;
+  background-color: white;
+  color: blue;
+  border-style: outset;
+  font-weight: bold;
+  border-radius: $radius;
+  transition: all 1s; }
+  a input:hover {
+  width: 13rem;
+  height: 3.7rem;
+  border-style: inset;
+  background-color: black; }
 }    
   
 .tours__mapa {
-    display: inline-flex;
-    flex: 1;
-    padding-top: $paddingtop1;
-    padding-bottom: $paddingbottom1;
-    li {
-    list-style: none;
-    justify-content: space-evenly;
-    justify-content: center;
-    align-items: center;}
-    h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center; }    
-    iframe {
-    border: 0;
-    border-radius: 1rem;
-    padding-top: $paddingtop1;
-    padding-bottom: $paddingbottom1;
-    width: 12rem;
-    height: 12rem; }
+  display: inline-flex;
+  flex: 1;
+  padding-top: $padding1;
+  padding-bottom: $padding1;
+  li {
+  list-style: none;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;}
+  h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center; }  
+  iframe {
+  border: 0;
+  border-radius: 1rem;
+  padding-top: $padding1;
+  padding-bottom: $padding1;
+  width: 12rem;
+  height: 12rem; }
 }
   
 .ventas {
-    display: block;
-    text-align: center;
-    align-items: center;
-    width: 100%; }
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  }
   
 .productos {
-    display: inline-flex;
-    padding-top: $paddingtop2;
-    padding-bottom: $paddingbottom2;
-    background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%); }
+  display: inline-flex;
+  padding-top: $padding2;
+  padding-bottom: $padding2;
+  background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%); }
   
 .listado {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50%;
-    li {
-    list-style: none;
-    display: flex;
-    flex: 1; }
-    li img {
-    border-radius: 1rem; }
-    li img:hover {
-    transform: translate(10px, 20px); }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  li {
+  list-style: none;
+  display: flex;
+  flex: 1; }
+  li img {
+  border-radius: 1rem; }
 }  
 
 .seleccion {
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    width: 50%;
-    form legend h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: $paddingtop2;
-    padding-bottom: $paddingbottom2; }
-    img {
-    border-radius: 1rem; }
-    fieldset {
-    border: white solid;
-    border-radius: 1rem;
-    justify-content: center;
-    padding: 2rem; }
-    p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300; }
-    form div {
-    font-family: 'Roboto', sans-serif;
-    padding: 0.6rem; }
-    form div select {
-    width: 10rem;
-    height: 2rem;
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    border-radius: $radius;
-    transition: all 1s; }
-    form div select:focus {
-    width: 11rem;
-    height: 3rem; }
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  form legend h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  padding-top: $padding2;
+  padding-bottom: $padding2; }
+  img {
+  border-radius: 1rem; }
+  fieldset {
+  border: white solid;
+  border-radius: 1rem;
+  justify-content: center;
+  padding: 2rem; }
+  p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+  form div {
+  font-family: 'Roboto', sans-serif;
+  padding: 0.6rem; }
+  form div select {
+  width: 10rem;
+  height: 2rem;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  border-radius: $radius;
+  transition: all 1s; }
+  form div select:focus {
+  width: 11rem;
+  height: 3rem; }
 }
 
 .boton {
-    width: 12.5rem;
-    height: 3rem;
-    background-color: white;
-    color: blue;
-    border-style: outset;
-    font-weight: bold;
-    border-radius: $radius;
-    transition: all 1s; }
+  width: 12.5rem;
+  height: 3rem;
+  background-color: white;
+  color: blue;
+  border-style: outset;
+  font-weight: bold;
+  border-radius: $radius;
+  transition: all 1s; }
   
 .boton:hover {
-    width: 13rem;
-    height: 3.7rem;
-    border-style: inset;
-    background-color: black; }
+  width: 13rem;
+  height: 3.7rem;
+  border-style: inset;
+  background-color: black; }
   
 .registro {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    background-image: url(../multimedia/fondoblanco.png);
-    fieldset {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-color: black;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 1rem; }
-    form legend h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: $paddingbottom2; }
-    p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    padding-top: $paddingtop1;
-    padding-bottom: $paddingbottom1; }
-    form div {
-    font-family: 'Roboto', sans-serif;
-    padding: 1rem; }
-    form div select {
-    width: 10rem;
-    height: 2rem;
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    border-radius: $radius;
-    transition: all 1s; }
-    form div select:focus {
-    width: 11rem;
-    height: 3rem; }
+  display: block;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../multimedia/fondoblanco.png);
+  fieldset {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: black;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem; }
+  form legend h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: $padding2; }
+  p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  padding-top: $padding1;
+  padding-bottom: $padding1; }
+  form div {
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem; }
+  form div select {
+  width: 10rem;
+  height: 2rem;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  border-radius: $radius;
+  transition: all 1s; }
+  form div select:focus {
+  width: 11rem;
+  height: 3rem; }
 }
 
 .completar {
-    width: 10rem;
-    height: 2rem;
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    border-radius: $radius;
-    transition: all 1s; }
+  width: 10rem;
+  height: 2rem;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  border-radius: $radius;
+  transition: all 1s;
+}
   
 .completar:focus {
-    width: 11rem;
-    height: 3rem; }
-    
+  width: 11rem;
+  height: 3rem;
+}
+  
 /* ----------------- MEDIA QUERIES ------------------- */
 
 @media (max-width: 768px) {
-
-    h1 {
-      background-image: url(../multimedia/fondoblanco.png);
-      background-size: 400px;  
-      font-size: 3.5em; }
-    header {
-      background-image: url(../multimedia/fondoblanco.png);
-      background-size: 400px; 
-      background-color: unset; }
-    .presentacion {
-      background-image: none;
-      border: 0;
-      padding: 0;
-      margin: 0; }
-    .presentacion video {
-      background-image: url(../multimedia/fondoblanco.png);
-      background-size: 400px; 
-      width: 20rem; }
-    .presentacion h2 {
-      font-weight: 300;
-      padding-top: 2rem;
-      padding-bottom: 2rem; }
-    .presentacion h4 {
-      font-weight: 200;
-      color: white;
-      background-color: unset;
-      height: fit-content; }
-    .extras__locacion iframe {
-      width: 15rem;
-      height: 15rem; }
-    .extras__musica iframe {
-      width: 15rem;
-      height: 20.3rem; }
-    footer {
-      width: fit-content;}  
-    footer img {
-      width: 200px;}
-    .redes h3 {
-      padding-top: 1rem;
-      font-size: 2em; } 
-    .redes__nav a img {
-      width: 50px; }
-    footer p {
-      font-size: 1em; }
+  h1 {
+    background-image: url(../multimedia/fondoblanco.png);
+    background-size: 400px;  
+    padding-top: $padding2;
+    padding-bottom: $padding2;
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+  }  
+  h2 {
+    padding-top: $padding2;
+    padding-bottom: $padding2;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+  }  
+  h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5em;
+    font-family: 'Roboto';
+    font-weight: bold;
+  }  
+  h4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Roboto';
+    font-weight: 200;
+  }  
+  p {
+    padding-top: $padding1;
+    padding-bottom: $padding1;
+    font-family: 'Roboto';
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+  }
+  header {
+  background-image: url(../multimedia/fondoblanco.png);
+  background-size: 400px; 
+  background-color: unset;
+  }
+  .presentacion {
+  background-image: none;
+  }
+  .presentacion video {
+  background-image: url(../multimedia/fondoblanco.png);
+  background-size: 400px; 
+  width: 24rem;
+  }
+ .extras__locacion iframe {
+  width: 15rem;
+  height: 15rem;
+  }
+  .extras__musica iframe {
+  width: 15rem;
+  height: 20.3rem;
+  }
+  footer {
+    width: fit-content;
+  }
+  .rodando {
+    width: 200px;
+  }
+  .redes__nav a img {
+  width: 50px;
+  }
+  footer p {
+  background-color: black;
+  }
 
     .albumes {
       height: fit-content;
