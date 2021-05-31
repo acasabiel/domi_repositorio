@@ -179,31 +179,19 @@ p {
   text-align: center;
   align-items: center;
   background-image: url(../multimedia/fondoblanco.png);
-  width: 100%;
   video {
-  width: 25rem;
-  border: 0; }
+  width: 25rem; }
   h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  font-weight: 500;
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: $padding2; }
+  padding-top: 3rem; }
   p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
   text-align: center;
-  padding-top: $padding1;
-  padding-bottom: $padding1; }
+  padding-top: $padding2;}
 }
 
 .tours {
   background: linear-gradient(180deg, black 0%, #07034a 50%, navy 100%);
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
   justify-items: center;
   align-items: center;
   padding-top: 3rem;
@@ -217,12 +205,7 @@ p {
   align-items: center;
   text-align: center;
   h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  font-weight: 300;
-  text-align: center;
-  padding-top: $padding1;
-  padding-bottom: $padding1;}
+  text-align: center; }
   a input {
   width: 12.5rem;
   height: 3rem;
@@ -250,12 +233,9 @@ p {
   justify-content: center;
   align-items: center;}
   h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  font-weight: 500;
   text-align: center; }  
   iframe {
-  border: 0;
+  border: 0;  
   border-radius: 1rem;
   padding-top: $padding1;
   padding-bottom: $padding1;
@@ -267,14 +247,14 @@ p {
   display: block;
   text-align: center;
   align-items: center;
+  background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%);
   width: 100%;
-  }
+}
   
 .productos {
   display: inline-flex;
   padding-top: $padding2;
-  padding-bottom: $padding2;
-  background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%); }
+  padding-bottom: $padding2; }
   
 .listado {
   display: flex;
@@ -282,7 +262,6 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50%;
   li {
   list-style: none;
   display: flex;
@@ -292,30 +271,22 @@ p {
 }  
 
 .seleccion {
+  padding: 0;
   display: inline-block;
   justify-content: center;
   text-align: center;
-  width: 50%;
   form legend h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
-  font-weight: 500;
-  text-align: center;
-  padding-top: $padding2;
-  padding-bottom: $padding2; }
+  text-align: center;}
   img {
   border-radius: 1rem; }
   fieldset {
-  border: white solid;
+  border: white solid 0.6rem;
   border-radius: 1rem;
   justify-content: center;
-  padding: 2rem; }
-  p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300; }
+  padding: $padding2; }
   form div {
   font-family: 'Roboto', sans-serif;
-  padding: 0.6rem; }
+  padding: $padding1; }
   form div select {
   width: 10rem;
   height: 2rem;
@@ -351,26 +322,17 @@ p {
   text-align: center;
   background-image: url(../multimedia/fondoblanco.png);
   fieldset {
-  margin-left: 1rem;
-  margin-right: 1rem;
   background-color: black;
   justify-content: center;
-  padding: 2rem;
+  padding-top: $padding2;
+  padding-bottom: $padding2;
   border-radius: 1rem; }
   form legend h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  font-weight: 500;
   text-align: center;
   padding-top: 3rem;
   padding-bottom: $padding2; }
   p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  padding-top: $padding1;
-  padding-bottom: $padding1; }
+  text-align: center; }
   form div {
   font-family: 'Roboto', sans-serif;
   padding: 1rem; }
@@ -497,66 +459,47 @@ p {
   transform: none; }
 
   .videocrew {
-    height: fit-content;
-      width: fit-content;
-      background-image: none;}
-    .videocrew video {
-      width: 18rem; }
-    .videocrew h2 {
-      font-weight: 300;
-      padding-top: 2rem;
-      padding-bottom: 2rem; }
-    .tours__mapa li h2 {
-      font-weight: 300;
-      padding-top: 2rem;
-      padding-bottom: 2rem; }
-    .tours__mapa iframe {
-      width: 10rem;
-      height: 10rem; }
-    .tours__mapa {
-      padding-top: 1rem;
-      padding-bottom: 1rem; }
+  height: fit-content;
+  width: fit-content;
+  background-image: none;}
+  .videocrew video {
+  width: 18rem; }
+  .tours__mapa iframe {
+  width: 10rem;
+  height: 10rem; }
+  .tours__mapa {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
       
-    .ventas {
-      background-image: none; }
-    .seleccion {
-      width: 50%; }
-    .seleccion fieldset legend {
-      font-size: 1em;
-      font-weight: 300;
-      padding-top: 1rem;
-      padding-bottom: 1rem; }
-    .seleccion p {
-      font-weight: 300; }
-    .seleccion img {
-      width: 15rem;
-      font-weight: 300; }
+  .ventas {
+  background-image: none;
+  padding: 0; }
+  .seleccion fieldset legend {
+  font-size: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .seleccion img {
+  width: 15rem;}
 
-    .registro {
-      background-image: none; }
-    .registro form legend h2 {
-      font-weight: 300;
-      padding-top: 2rem;
-      padding-bottom: 2rem; }
-    .registro p {
-        font-weight: 300;}
+ .registro {
+ background-image: none; }
 }
 
 @media (min-width: 768px) {
-    header {
-      background-color: white; }
+  header {
+  background-color: white; }
 }
 
 @media (max-width: 1024px) {
-    .tours__mapa li h2 {
-      font-size: 1em;
-      font-weight: 300;
-      padding-top: 1rem;
-      padding-bottom: 1rem; }
-    .tours__mapa iframe {
-      width: 10rem;
-      height: 10rem; }
-    .tours__mapa {
-      padding-top: 1rem;
-      padding-bottom: 1rem; }
+  .tours__mapa li h2 {
+  font-size: 1em;
+  font-weight: 300;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .tours__mapa iframe {
+  width: 10rem;
+  height: 10rem; }
+  .tours__mapa {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 }

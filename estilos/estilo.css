@@ -233,31 +233,19 @@ p {
   display: block;
   text-align: center;
   align-items: center;
-  background-image: url(../multimedia/fondoblanco.png);
-  width: 100%; }
+  background-image: url(../multimedia/fondoblanco.png); }
   .videocrew video {
-    width: 25rem;
-    border: 0; }
+    width: 25rem; }
   .videocrew h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem; }
+    padding-top: 3rem; }
   .videocrew p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
     text-align: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem; }
+    padding-top: 2rem; }
 
 .tours {
   background: linear-gradient(180deg, black 0%, #07034a 50%, navy 100%);
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
   justify-items: center;
   align-items: center;
   padding-top: 3rem;
@@ -270,12 +258,7 @@ p {
   align-items: center;
   text-align: center; }
   .tours__contacto h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem; }
+    text-align: center; }
   .tours__contacto a input {
     width: 12.5rem;
     height: 3rem;
@@ -302,9 +285,6 @@ p {
     justify-content: center;
     align-items: center; }
   .tours__mapa h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
     text-align: center; }
   .tours__mapa iframe {
     border: 0;
@@ -318,21 +298,20 @@ p {
   display: block;
   text-align: center;
   align-items: center;
+  background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%);
   width: 100%; }
 
 .productos {
   display: inline-flex;
   padding-top: 2rem;
-  padding-bottom: 2rem;
-  background: linear-gradient(180deg, black 0%, #07034a 50%, black 100%); }
+  padding-bottom: 2rem; }
 
 .listado {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 50%; }
+  text-align: center; }
   .listado li {
     list-style: none;
     display: flex;
@@ -341,27 +320,19 @@ p {
     border-radius: 1rem; }
 
 .seleccion {
+  padding: 0;
   display: inline-block;
   justify-content: center;
-  text-align: center;
-  width: 50%; }
+  text-align: center; }
   .seleccion form legend h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
+    text-align: center; }
   .seleccion img {
     border-radius: 1rem; }
   .seleccion fieldset {
-    border: white solid;
+    border: white solid 0.6rem;
     border-radius: 1rem;
     justify-content: center;
     padding: 2rem; }
-  .seleccion p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300; }
   .seleccion form div {
     font-family: 'Roboto', sans-serif;
     padding: 0.6rem; }
@@ -399,26 +370,17 @@ p {
   text-align: center;
   background-image: url(../multimedia/fondoblanco.png); }
   .registro fieldset {
-    margin-left: 1rem;
-    margin-right: 1rem;
     background-color: black;
     justify-content: center;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     border-radius: 1rem; }
   .registro form legend h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 2rem; }
   .registro p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem; }
+    text-align: center; }
   .registro form div {
     font-family: 'Roboto', sans-serif;
     padding: 1rem; }
@@ -529,14 +491,6 @@ p {
     background-image: none; }
   .videocrew video {
     width: 18rem; }
-  .videocrew h2 {
-    font-weight: 300;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
-  .tours__mapa li h2 {
-    font-weight: 300;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
   .tours__mapa iframe {
     width: 10rem;
     height: 10rem; }
@@ -544,27 +498,16 @@ p {
     padding-top: 1rem;
     padding-bottom: 1rem; }
   .ventas {
-    background-image: none; }
-  .seleccion {
-    width: 50%; }
+    background-image: none;
+    padding: 0; }
   .seleccion fieldset legend {
     font-size: 1em;
-    font-weight: 300;
     padding-top: 1rem;
     padding-bottom: 1rem; }
-  .seleccion p {
-    font-weight: 300; }
   .seleccion img {
-    width: 15rem;
-    font-weight: 300; }
+    width: 15rem; }
   .registro {
-    background-image: none; }
-  .registro form legend h2 {
-    font-weight: 300;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
-  .registro p {
-    font-weight: 300; } }
+    background-image: none; } }
 
 @media (min-width: 768px) {
   header {
